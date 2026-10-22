@@ -1,14 +1,8 @@
 {
-  "name": "avalanche.public.dappnode.eth",
-  "version": "0.1.38",
-  "upstreamVersion": "v1.14.2",
-  "upstreamRepo": "ava-labs/avalanchego",
-  "shortDescription": "Avalanche Node and Wallet WebUI",
-  "description": "Avalanche is an open-source platform for launching highly decentralized applications, new financial primitives, and new interoperable blockchains. This package includes a full node and a local Wallet",
-  "categories": ["Blockchain"],
-  "license": "GPL-3.0",
-  "mainService": "wallet",
-  "type": "service",
+  "architectures": [
+    "linux/amd64"
+  ],
+  "author": "La ColmenaSVQ (https://github.com/Colm3na)",
   "backup": [
     {
       "name": "staking",
@@ -16,10 +10,12 @@
       "service": "avalanche"
     }
   ],
-  "disclaimer": {
-    "message": "This software is experimental, presented 'as is' and inherently carries risks. By installing it, you acknowledge that DAppNode Association has done its best to mitigate these risks and accept to waive any liability or responsibility for DAppNode in case of any shortage, discrepancy, damage, loss or destruction of any digital asset managed within this DAppNode package.\n\nThis package stores private keys, which will be stored in your DAppNode. Neither DAppNode Association nor the developers of this software can have access to your private key, nor help you recover it if you lose it. \n\nYou are solely responsible for keeping your private keys and password safe and to perform secure backups, as well as to restrict access to your computer and other equipment. To the extent permitted by applicable law, you agree to be responsible for all activities that have been conducted from your account. You must take all necessary steps to ensure that your private key, password, and recovery phrase remain confidential and secured."
+  "bugs": {
+    "url": "https://github.com/Colm3na/DAppNodePackage-avalanche/issues"
   },
-  "author": "La ColmenaSVQ (https://github.com/Colm3na)",
+  "categories": [
+    "Blockchain"
+  ],
   "contributors": [
     "Wimel (https://github.com/wimel)",
     "Tropicar (https://github.com/tropicar)",
@@ -27,18 +23,26 @@
     "Pol (https://github.com/Pol-Lanski)",
     "Edu (https://github.com/eduadiez)"
   ],
-  "architectures": ["linux/amd64"],
+  "description": "Avalanche is an open-source platform for launching highly decentralized applications, new financial primitives, and new interoperable blockchains. This package includes a full node and a local Wallet",
+  "disclaimer": {
+    "message": "This software is experimental, presented 'as is' and inherently carries risks. By installing it, you acknowledge that DAppNode Association has done its best to mitigate these risks and accept to waive any liability or responsibility for DAppNode in case of any shortage, discrepancy, damage, loss or destruction of any digital asset managed within this DAppNode package.\n\nThis package stores private keys, which will be stored in your DAppNode. Neither DAppNode Association nor the developers of this software can have access to your private key, nor help you recover it if you lose it. \n\nYou are solely responsible for keeping your private keys and password safe and to perform secure backups, as well as to restrict access to your computer and other equipment. To the extent permitted by applicable law, you agree to be responsible for all activities that have been conducted from your account. You must take all necessary steps to ensure that your private key, password, and recovery phrase remain confidential and secured."
+  },
+  "license": "GPL-3.0",
+  "links": {
+    "Avalabs": "https://www.avalabs.org/",
+    "WalletUI": "http://avalanche.public.dappnode/",
+    "endpoint": "http://avalanche.avalanche.public.dappnode:9650/ext/bc/C/rpc",
+    "upstream releases": "https://github.com/ava-labs/avalanchego/releases"
+  },
+  "mainService": "wallet",
+  "name": "avalanche.public.dappnode.eth",
   "repository": {
     "type": "git",
     "url": "https://github.com/Colm3na/DAppNodePackage-avalanche.git"
   },
-  "bugs": {
-    "url": "https://github.com/Colm3na/DAppNodePackage-avalanche/issues"
-  },
-  "links": {
-    "Avalabs": "https://www.avalabs.org/",
-    "upstream releases": "https://github.com/ava-labs/avalanchego/releases",
-    "WalletUI": "http://avalanche.public.dappnode/",
-    "endpoint": "http://avalanche.avalanche.public.dappnode:9650/ext/bc/C/rpc"
-  }
+  "shortDescription": "Avalanche Node and Wallet WebUI",
+  "type": "service",
+  "upstreamRepo": "ava-labs/avalanchego",
+  "upstreamVersion": "v1.15.2",
+  "version": "0.1.38"
 }
